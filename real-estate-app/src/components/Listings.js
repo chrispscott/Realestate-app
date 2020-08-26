@@ -28,7 +28,16 @@ export default class Listings extends Component {
 
                 <section className="listings-results">
                     <div className="listing">
-                        
+                        <div className="listing-img">
+                            <span className="Address"> Address</span>
+                            <div className="details">
+                                <div className="user-img"></div>
+                                <div className="user-details">
+                                    <span className="user-name">Nina Smith</span>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
 
 
