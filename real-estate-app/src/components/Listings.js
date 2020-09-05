@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 export default class Listings extends Component {
     render() {
         return (
-            <section className="listings">
+            <section id="listings">
 
                 <section className="search-area">
                     <input type="text" name="search" />
@@ -18,8 +18,8 @@ export default class Listings extends Component {
                             <option value="price-asc">Lowest Price</option>
                         </select>
                         <div className="view">
-                            <i className="fas fa-list"></i>
-                            <i className="fas fa-bars"></i>
+                        <i class="fa fa-list" aria-hidden="true"></i>
+                        <i class="fa fa-bars" aria-hidden="true"></i>
                         </div>
                     </div>
                 </section>
@@ -34,19 +34,42 @@ export default class Listings extends Component {
                                 <div className="user-img"></div>
                                 <div className="user-details">
                                     <span className="user-name">Nina Smith</span>
+                                    <span className="post-date">05/05/2017</span>
+                                </div>
+                                <div className="listing-details">
+                                    <div className="floor-space">
+                                     <i class="fa fa-square-o" aria-hidden="true"></i>
+                                    </div>
+                                    <span>1000 ft&sup2;</span>
+                                    <div className="bedrooms">
+                                        <i className="fa fa-bed" aria-hidden="true"></i>
+                                        <span>3 bedrooms</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-
+                        <div className="bottom-info">
+                            <span>$1000 / month</span>
+                            <span>
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                Glen Cove NY
+                            </span>
+                        </div>
                     </div>
-
-
                 </section>
 
 
 
                 <section className="pagination">
-
+                    <ul className="pagination-nums">
+                        <li> prev</li>
+                        <li> 1</li>
+                        <li> 2</li>
+                        <li> 3</li>
+                        <li> 4</li>
+                        <li> 5</li>
+                        <li> next</li>
+                    </ul>
                 </section>
 
 
