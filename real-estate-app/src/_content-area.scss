@@ -75,6 +75,8 @@
     display: inline-block;
     padding: 15px;
     background:$offWhite;
+    overflow: auto;
+    width: 100%;
     
     .search-area{
         input[type="text"] {
