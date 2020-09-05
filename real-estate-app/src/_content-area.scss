@@ -1,6 +1,13 @@
+#content-area{
+    overflow: auto;
+    width: 100%;
+    background: black;
+}
+
 #filter{
     background: $grey;
     width: 29%;
+    max-width: 300px;
     float: left;
     display: inline-block;
 
@@ -68,15 +75,13 @@
 
 
 
-
 #listings{
     width: 68%;
     float: left;
     display: inline-block;
     padding: 15px;
     background:$offWhite;
-    overflow: auto;
-    width: 100%;
+    
     
     .search-area{
         input[type="text"] {
@@ -97,6 +102,7 @@
             font-size: 0.8rem;
             color: $lightGrey;
             display: inline-block;
+            
 
         }
 
@@ -128,9 +134,13 @@
     }
 
     .listings-results{
+        margin-bottom: 80px;
         .listing{
             background: #fff;
             width: 33.33%;
+            -webkit-box-shadow: 0px 9px 54px -5px rgba(222,222,222,1);
+            -moz-box-shadow: 0px 9px 54px -5px rgba(222,222,222,1);
+            box-shadow: 0px 9px 54px -5px rgba(222,222,222,1);
 
         }
     }
