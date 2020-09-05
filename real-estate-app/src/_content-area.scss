@@ -163,6 +163,7 @@
 
 
             .details{
+                padding: 20px;
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -179,6 +180,36 @@
                 background: -moz-linear-gradient(-45deg, rgba(214,55,211,.8) 5%, rgba(219,49,249,.8) 33%, rgba(239,112,235,.8) 54%, rgba(239,112,235,.8) 54%, rgba(239,112,235,.8) 61%, rgba(239,112,235,.8) 73%, rgba(239,112,235,.8) 83%, rgba(239,112,235,.8) 91%); /* FF3.6-15 */
                 background: -webkit-linear-gradient(-45deg, rgba(214,55,211,.8) 5%,rgba(219,49,249,.8) 33%,rgba(239,112,235,.8) 54%,rgba(239,112,235,.8) 54%,rgba(239,112,235,.8) 61%,rgba(239,112,235,.8) 73%,rgba(239,112,235,.8) 83%,rgba(239,112,235,.8) 91%); /* Chrome10-25,Safari5.1-6 */
                 background: linear-gradient(135deg, rgba(214,55,211,.8) 5%,rgba(219,49,249,.8) 33%,rgba(239,112,235,.8) 54%,rgba(239,112,235,.8) 54%,rgba(239,112,235,.8) 61%,rgba(239,112,235,.8) 73%,rgba(239,112,235,.8) 83%,rgba(239,112,235,.8) 91%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+
+                .user-img{
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    border: 2px solid white;
+                    display: inline-block;
+                }
+
+                .user-details{
+                    vertical-align: top;
+                    display: inline-block;
+                    width: 70%;
+                    margin-left: 20px;
+
+                    .user-name{
+                        font-weight: 300;
+                        font-size: 0.9rem;
+                        display: block;
+                        color: rgba(222,222,222,1);
+
+                    }
+
+                    .post-date{
+                        display: block;
+                        color: rgba(222,222,222,.5);
+
+                    }
+                }
             
             }
         
