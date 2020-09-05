@@ -183,11 +183,16 @@
 
 
                 .user-img{
-                    width: 40px;
-                    height: 40px;
+                    width: 35px;
+                    height: 35px;
                     border-radius: 50%;
                     border: 2px solid white;
                     display: inline-block;
+                    background: url(https://cdnimages.familyhomeplans.com/plans/81902/81902-b600.jpg) no-repeat center center ; 
+                    -webkit-background-size: cover;
+                    -moz-background-size: cover;
+                    -o-background-size: cover;
+                    background-size: cover;
                 }
 
                 .user-details{
