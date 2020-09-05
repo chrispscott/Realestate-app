@@ -143,5 +143,45 @@
             box-shadow: 0px 9px 54px -5px rgba(222,222,222,1);
 
         }
+
+        .listing-img{
+            color: white;
+            padding: 15px;
+            position: relative;
+            background: url(https://cdnimages.familyhomeplans.com/plans/81902/81902-b600.jpg) no-repeat center center ; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            min-height: 200px;
+            -webkit-border-top-left-radius: 5px;
+            -webkit-border-top-right-radius: 5px;
+            -moz-border-radius-topleft: 5px;
+            -moz-border-radius-topright: 5px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+
+
+            .details{
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                -webkit-border-top-left-radius: 5px;
+                -webkit-border-top-right-radius: 5px;
+                -moz-border-radius-topleft: 5px;
+                -moz-border-radius-topright: 5px;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#d637d3+5,db31f9+33,ef70eb+54,ef70eb+54,ef70eb+61,ef70eb+73,ef70eb+83,ef70eb+91 */
+                background: rgb(214,55,211); /* Old browsers */
+                background: -moz-linear-gradient(-45deg, rgba(214,55,211,.8) 5%, rgba(219,49,249,.8) 33%, rgba(239,112,235,.8) 54%, rgba(239,112,235,.8) 54%, rgba(239,112,235,.8) 61%, rgba(239,112,235,.8) 73%, rgba(239,112,235,.8) 83%, rgba(239,112,235,.8) 91%); /* FF3.6-15 */
+                background: -webkit-linear-gradient(-45deg, rgba(214,55,211,.8) 5%,rgba(219,49,249,.8) 33%,rgba(239,112,235,.8) 54%,rgba(239,112,235,.8) 54%,rgba(239,112,235,.8) 61%,rgba(239,112,235,.8) 73%,rgba(239,112,235,.8) 83%,rgba(239,112,235,.8) 91%); /* Chrome10-25,Safari5.1-6 */
+                background: linear-gradient(135deg, rgba(214,55,211,.8) 5%,rgba(219,49,249,.8) 33%,rgba(239,112,235,.8) 54%,rgba(239,112,235,.8) 54%,rgba(239,112,235,.8) 61%,rgba(239,112,235,.8) 73%,rgba(239,112,235,.8) 83%,rgba(239,112,235,.8) 91%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            
+            }
+        
+        }
     }
 }
