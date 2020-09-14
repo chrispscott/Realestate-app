@@ -160,9 +160,19 @@
             -moz-border-radius-topright: 5px;
             border-top-left-radius: 5px;
             border-top-right-radius: 5px;
+            
+
+
+            &:hover{
+                .details{
+                    opacity: 1;
+                }
+            }
 
 
             .details{
+                transition: all .4s ease-in-out;
+                opacity: 0;
                 padding: 30px;
                 position: absolute;
                 top: 0;
