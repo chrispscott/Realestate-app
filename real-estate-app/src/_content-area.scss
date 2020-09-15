@@ -138,7 +138,6 @@
         margin-bottom: 80px;
         .listing{
             background: #fff;
-            width: 33.33%;
             -webkit-box-shadow: 0px 9px 54px -5px rgba(222,222,222,1);
             -moz-box-shadow: 0px 9px 54px -5px rgba(222,222,222,1);
             box-shadow: 0px 9px 54px -5px rgba(222,222,222,1);
@@ -306,12 +305,37 @@
     }
 }
 
+#pagination{
+    text-align: center;
+    .pages{
+        margin: 0 auto;
+        display: inline-block;
+        background: white;
+        -webkit-box-shadow: 0px 9px 54px -5px rgba(222,222,222,1);
+    -moz-box-shadow: 0px 9px 54px -5px rgba(222,222,222,1);
+     box-shadow: 0px 9px 54px -5px rgba(222,222,222,1);
+
+     li{
+         display: inline-block;
+        padding: 20px;
+
+        &.active,
+        &:hover{
+            color: white;
+            background: $pink;
+            font-weight: 700;
+        }
+     }
+    }
+}
+
 
 
 .col-md-3{
     width: 25%;
     display: inline-block;
     vertical-align: top;
+    padding: 0 15px ;
 }
 
 .col-md-9{

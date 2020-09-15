@@ -27,56 +27,146 @@ export default class Listings extends Component {
 
 
                 <section className="listings-results">
-                    <div className="listing">
-                        <div className="listing-img">
-                            <span className="address"> 2 Hill st Glen Cove ny</span>
-                            <div className="details">
+                    <div className="col-md-3">
+                        <div className="listing">
+                            <div className="listing-img">
+                                <span className="address"> 2 Hill st Glen Cove ny</span>
+                                <div className="details">
 
-                                <div className="col-md-3">
-                                    <div className="user-img"></div>
-                                </div>
-
-
-                                <div className="col-md-9">
-                                    <div className="user-details">
-                                        <span className="user-name">Nina Smith</span>
-                                        <span className="post-date">05/05/2017</span>
+                                    <div className="col-md-3">
+                                        <div className="user-img"></div>
                                     </div>
-                                    <div className="listing-details">
-                                        <div className="floor-space">
-                                            <i class="fa fa-square-o" aria-hidden="true"></i>
+
+
+                                    <div className="col-md-9">
+                                        <div className="user-details">
+                                            <span className="user-name">Nina Smith</span>
+                                            <span className="post-date">05/05/2017</span>
                                         </div>
-                                        <span>1000 ft&sup2;</span>
-                                        <div className="bedrooms">
-                                            <i className="fa fa-bed" aria-hidden="true"></i>
-                                            <span>3 bedrooms</span>
+                                        <div className="listing-details">
+                                            <div className="floor-space">
+                                                <i class="fa fa-square-o" aria-hidden="true"></i>
+                                            </div>
+                                            <span>1000 ft&sup2;</span>
+                                            <div className="bedrooms">
+                                                <i className="fa fa-bed" aria-hidden="true"></i>
+                                                <span>3 bedrooms</span>
+                                            </div>
+                                        </div>
+                                        <div className="view-btn">
+                                            view listing
                                         </div>
                                     </div>
-                                    <div className="view-btn">
-                                        view listing
-                                    </div>
+
+
+
                                 </div>
-
-
-
+                            </div>
+                            <div className="bottom-info">
+                                <span className="price">$1000 / month</span>
+                                <span className="location">
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                    Glen Cove NY
+                                </span>
                             </div>
                         </div>
-                        <div className="bottom-info">
-                            <span className="price">$1000 / month</span>
-                            <span className="location">
-                                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                Glen Cove NY
-                            </span>
+                    </div>
+                    <div className="col-md-3">
+                        <div className="listing">
+                            <div className="listing-img">
+                                <span className="address"> 2 Hill st Glen Cove ny</span>
+                                <div className="details">
+
+                                    <div className="col-md-3">
+                                        <div className="user-img"></div>
+                                    </div>
+
+
+                                    <div className="col-md-9">
+                                        <div className="user-details">
+                                            <span className="user-name">Nina Smith</span>
+                                            <span className="post-date">05/05/2017</span>
+                                        </div>
+                                        <div className="listing-details">
+                                            <div className="floor-space">
+                                                <i class="fa fa-square-o" aria-hidden="true"></i>
+                                            </div>
+                                            <span>1000 ft&sup2;</span>
+                                            <div className="bedrooms">
+                                                <i className="fa fa-bed" aria-hidden="true"></i>
+                                                <span>3 bedrooms</span>
+                                            </div>
+                                        </div>
+                                        <div className="view-btn">
+                                            view listing
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                            <div className="bottom-info">
+                                <span className="price">$1000 / month</span>
+                                <span className="location">
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                    Glen Cove NY
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-md-3">
+                        <div className="listing">
+                            <div className="listing-img">
+                                <span className="address"> 2 Hill st Glen Cove ny</span>
+                                <div className="details">
+
+                                    <div className="col-md-3">
+                                        <div className="user-img"></div>
+                                    </div>
+
+
+                                    <div className="col-md-9">
+                                        <div className="user-details">
+                                            <span className="user-name">Nina Smith</span>
+                                            <span className="post-date">05/05/2017</span>
+                                        </div>
+                                        <div className="listing-details">
+                                            <div className="floor-space">
+                                                <i class="fa fa-square-o" aria-hidden="true"></i>
+                                            </div>
+                                            <span>1000 ft&sup2;</span>
+                                            <div className="bedrooms">
+                                                <i className="fa fa-bed" aria-hidden="true"></i>
+                                                <span>3 bedrooms</span>
+                                            </div>
+                                        </div>
+                                        <div className="view-btn">
+                                            view listing
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                            <div className="bottom-info">
+                                <span className="price">$1000 / month</span>
+                                <span className="location">
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                    Glen Cove NY
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </section>
 
 
 
-                <section className="pagination">
-                    <ul className="pagination-nums">
+                <section id="pagination">
+                    <ul className="pages">
                         <li> prev</li>
-                        <li> 1</li>
+                        <li className="active"> 1</li>
                         <li> 2</li>
                         <li> 3</li>
                         <li> 4</li>
