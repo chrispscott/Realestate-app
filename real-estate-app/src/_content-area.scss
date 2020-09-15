@@ -167,6 +167,16 @@
                 .details{
                     opacity: 1;
                 }
+                .address{
+                    opacity: 0;
+                }
+            }
+
+            .address {
+                position: absolute;
+                bottom: 20px;
+                opacity: 1;
+                transition: all .4s ease-in-out;
             }
 
 
@@ -261,6 +271,18 @@
             
             }
         
+        }
+        .bottom-info{
+            padding: 20px 15px;
+            .price{
+                font-size: 1rem;
+                display: block;
+                margin-bottom: 10px;
+            }
+            .location{
+                font-size: 1.2rem;
+                display: block;
+            }
         }
     }
 }

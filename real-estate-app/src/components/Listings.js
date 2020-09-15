@@ -29,7 +29,7 @@ export default class Listings extends Component {
                 <section className="listings-results">
                     <div className="listing">
                         <div className="listing-img">
-                            <span className="Address"> Address</span>
+                            <span className="address"> 2 Hill st Glen Cove ny</span>
                             <div className="details">
 
                                 <div className="col-md-3">
@@ -62,8 +62,8 @@ export default class Listings extends Component {
                             </div>
                         </div>
                         <div className="bottom-info">
-                            <span>$1000 / month</span>
-                            <span>
+                            <span className="price">$1000 / month</span>
+                            <span className="location">
                                 <i class="fa fa-map-marker" aria-hidden="true"></i>
                                 Glen Cove NY
                             </span>
