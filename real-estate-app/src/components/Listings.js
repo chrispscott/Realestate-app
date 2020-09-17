@@ -33,7 +33,7 @@ export default class Listings extends Component {
                                </div>
                                <div className="listing-details">
                                <div className="floor-space">
-                                   <i class="fa fa-square-o" aria-hidden="true"></i>
+                                   <i className="fa fa-square-o" aria-hidden="true"></i>
                                </div>
                                    <span>1000 ft&sup2;</span>
                                    <div className="bedrooms">
@@ -53,7 +53,7 @@ export default class Listings extends Component {
                <div className="bottom-info">
                    <span className="price">{listing.price}</span>
                        <span className="location">
-                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            <i className="fa fa-map-marker" aria-hidden="true"></i>
                                    {listing.city}, {listing.state}
                        </span>
                </div>
@@ -83,8 +83,8 @@ export default class Listings extends Component {
                             <option value="price-asc">Lowest Price</option>
                         </select>
                         <div className="view">
-                        <i class="fa fa-list" aria-hidden="true"></i>
-                        <i class="fa fa-bars" aria-hidden="true"></i>
+                        <i className="fa fa-list" aria-hidden="true"></i>
+                        <i className="fa fa-bars" aria-hidden="true"></i>
                         </div>
                     </div>
                 </section>
