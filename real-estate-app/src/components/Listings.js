@@ -10,9 +10,12 @@ export default class Listings extends Component {
         this.loopListing = this.loopListing.bind(this)
     }
 
-    loopListing () {
-               
+    loopListing () {   
         let {listingData} = this.props
+
+        if(listingData == undefined || listingData.length == 0) {
+            return "sorry your filter did not match any listing"
+        }
 
         return listingData.map((listing) => {
             return (<div className="col-md-3">
