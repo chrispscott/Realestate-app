@@ -22,10 +22,12 @@ export default class RealEstate extends Component {
             gym: false,
             populateFormsData: '',
             sortby: 'price-dsc',
+            view: 'long'
         }
         this.change=this.change.bind(this)
         this.filteredData = this.filteredData.bind(this)
         this.populateForms = this.populateForms.bind(this)
+        this.changeView = this.changeView.bind(this)
     }
 
     change(event) {
@@ -37,8 +39,12 @@ export default class RealEstate extends Component {
             console.log(this.state)
             this.filteredData()
         })
-        
+    }
 
+    changeView(viewName) {
+        this.setState({
+            view:viewName
+        })
     }
 
     componentWillMount(){
@@ -76,7 +82,7 @@ export default class RealEstate extends Component {
                 return a.price - b.price
             })
         }
-        
+
         if(this.state.sortby == 'price-asc') {
             newData = newData.sort((a,b) => {
                 return b.price - a.price
@@ -140,7 +146,7 @@ export default class RealEstate extends Component {
                 <Header/>
                 <section id="content-area">
                     <Filter change={this.change} globalState={this.state} populateAction={this.populateForms} />
-                    <Listings listingData={this.state.filteredData}  change ={this.change}/>
+                    <Listings listingData={this.state.filteredData}  change ={this.change} globalState={this.state} changeView={this.changeView}/>
                 </section>
             </div>
         )
