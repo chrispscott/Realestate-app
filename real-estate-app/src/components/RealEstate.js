@@ -20,7 +20,8 @@ export default class RealEstate extends Component {
             elavator: false,
             swimming_pool: false,
             gym: false,
-            populateFormsData: ''
+            populateFormsData: '',
+            sortby: 'price-dsc',
         }
         this.change=this.change.bind(this)
         this.filteredData = this.filteredData.bind(this)
@@ -38,6 +39,17 @@ export default class RealEstate extends Component {
         })
         
 
+    }
+
+    componentWillMount(){
+        let listingData = this.state.listingData.sort((a,b) => {
+            return a.price - b.price
+        })
+
+
+        this.setState({
+            listingData
+        })
     }
 
 
@@ -59,6 +71,20 @@ export default class RealEstate extends Component {
         }
 
 
+        if(this.state.sortby == 'price-dsc') {
+            newData = newData.sort((a,b) => {
+                return a.price - b.price
+            })
+        }
+        
+        if(this.state.sortby == 'price-asc') {
+            newData = newData.sort((a,b) => {
+                return b.price - a.price
+            })
+        }
+
+
+
 
         this.setState({
             filteredData:newData
@@ -73,6 +99,8 @@ export default class RealEstate extends Component {
         cities = new Set(cities)
         cities = [...cities]
 
+        cities = cities.sort()
+
 
         ///homeType
         let homeTypes = this.state.listingData.map((item) => {
@@ -81,6 +109,8 @@ export default class RealEstate extends Component {
          homeTypes = new Set(homeTypes)
          homeTypes = [...homeTypes]
 
+         homeTypes = homeTypes.sort()
+
 
         // bedrooms
         let bedRooms = this.state.listingData.map((item) => {
@@ -88,6 +118,8 @@ export default class RealEstate extends Component {
          })
          bedRooms = new Set(bedRooms)
          bedRooms = [...bedRooms]
+
+         bedRooms = bedRooms.sort()
 
          this.setState({
              populateFormsData:{
@@ -108,7 +140,7 @@ export default class RealEstate extends Component {
                 <Header/>
                 <section id="content-area">
                     <Filter change={this.change} globalState={this.state} populateAction={this.populateForms} />
-                    <Listings listingData={this.state.filteredData} />
+                    <Listings listingData={this.state.filteredData}  change ={this.change}/>
                 </section>
             </div>
         )
