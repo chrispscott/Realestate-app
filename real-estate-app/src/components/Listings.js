@@ -39,11 +39,12 @@ export default class Listings extends Component {
                                <div className="listing-details">
                                <div className="floor-space">
                                    <i className="fa fa-square-o" aria-hidden="true"></i>
+                                   <span>{listing.floorSpace} ft&sup2;</span>
                                </div>
-                                   <span>1000 ft&sup2;</span>
+                                  
                                    <div className="bedrooms">
                                      <i className="fa fa-bed" aria-hidden="true"></i>
-                                       <span>{listing.bedrooms}</span>
+                                       <span>{listing.rooms}</span>
                                     </div>
                                </div>
                                 <div className="view-btn">
@@ -85,11 +86,11 @@ export default class Listings extends Component {
                                <div className="listing-details">
                                <div className="floor-space">
                                    <i className="fa fa-square-o" aria-hidden="true"></i>
+                                   <span>{Listings.floorSpace} ft&sup2;</span>
                                </div>
-                                   <span>1000 ft&sup2;</span>
                                    <div className="bedrooms">
                                      <i className="fa fa-bed" aria-hidden="true"></i>
-                                       <span>{listing.bedrooms}</span>
+                                       <span>{listing.rooms} rooms</span>
                                     </div>
                                </div>
                                 <div className="view-btn">
@@ -123,12 +124,12 @@ export default class Listings extends Component {
             <section id="listings">
 
                 <section className="search-area">
-                    <input type="text" name="search" />
+                    <input type="text" name="search" onChange={this.props.change}/>
                 </section>
 
 
                 <section className="sortby-area">
-                    <div className="results"> 390 results found</div>
+                    <div className="results">{this.props.globalState.filteredData.length}  results found</div>
                     <div className="sort-options">
                         <select name="sortby" className="sortby" onChange={this.props.change}>
                             <option value="price-dsc">Lowest Price</option>
@@ -144,7 +145,9 @@ export default class Listings extends Component {
 
 
                 <section className="listings-results">
-                   {this.loopListing()} 
+                   <div className="row">
+                    {this.loopListing()} 
+                   </div>
                 </section>
 
 

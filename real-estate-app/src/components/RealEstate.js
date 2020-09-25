@@ -20,9 +20,11 @@ export default class RealEstate extends Component {
             elavator: false,
             swimming_pool: false,
             gym: false,
+            filteredData:listingData,
             populateFormsData: '',
             sortby: 'price-dsc',
-            view: 'long'
+            view: 'long',
+            search:""
         }
         this.change=this.change.bind(this)
         this.filteredData = this.filteredData.bind(this)
@@ -86,6 +88,18 @@ export default class RealEstate extends Component {
         if(this.state.sortby == 'price-asc') {
             newData = newData.sort((a,b) => {
                 return b.price - a.price
+            })
+        }
+
+        if(this.state.search != '') {
+            newData = newData.filter((item) => {
+                let city = item.city.toLowerCase()
+                let searchText = this.state.search.toLowerCase()
+                let n = city.match(searchText)
+
+                if(n != null) {
+                    return true
+                }
             })
         }
 
