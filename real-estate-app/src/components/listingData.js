@@ -1,116 +1,170 @@
 let ListingsData = [
-    {
-        address: '2236 wishmount rd',
-        city: 'NEW YORK',
-        state: 'NY',
-        rooms: 2,
-        price: 150000,
-        floorspace:2000,
-        extras: [
-            'elevator',
-            'gym'
-        ],
-        homeType: 'Apartment',
-        image:'https://photos.zillowstatic.com/p_e/ISjvjrkv7cd20p0000000000.jpg',
-    },
-    {
-        address: '236 Mountrock rd',
-        city: 'Queens',
-        state: 'NY',
-        rooms: 3,
-        price: 250000,
-        floorspace:2000,
-        extras: [
-            'elevator',
-            'gym'
-        ],
-        homeType: 'Studio',
-        image:'https://realestateadminimages.gabriels.net/170/78224/170-20200423200613689-876.jpg',
-    },
-    {
-        address: '2236 wishmount rd',
-        city: 'Glen Cove',
-        state: 'NY',
-        rooms: 4,
-        price: 350000,
-        floorspace:2000,
-        extras: [
-            'elevator',
-            'gym'
-        ],
-        homeType: 'Room',
-        image:'https://www.coldwellbanker.com/images_brand/CB/72508062.jpg',
-    },
-    {
-        address: '2236 wishmount rd',
-        city: 'Ridgewood',
-        state: 'NY',
-        rooms: 5,
-        price: 250000,
-        floorspace:2000,
-        extras: [
-            'elevator',
-            'gym'
-        ],
-        homeType: 'Condo',
-        image:'https://www.coldwellbanker.com/images_brand/CB/72508062.jpg',
-    },
-    {
-        address: '2236 wishmount rd',
-        city: 'Queens',
-        state: 'NY',
-        rooms: 6,
-        price: 150000,
-        floorspace:2000,
-        extras: [
-            'elevator',
-            'gym'
-        ],
-        homeType: 'Apartment',
-        image:'https://www.coldwellbanker.com/images_brand/CB/72508062.jpg',
-    },
-    {
-        address: '2236 wishmount rd',
-        city: 'Ridgewood',
-        state: 'NY',
-        rooms: 1,
-        price: 150000,
-        floorspace:2000,
-        extras: [
-            'elevator',
-            'gym'
-        ],
-        homeType: 'Apartment',
-        image:'https://www.coldwellbanker.com/images_brand/CB/72508062.jpg',
-    },
-    {
-        address: '2236 wishmount rd',
-        city: 'Queens',
-        state: 'NY',
-        rooms: 2,
-        price: 150000,
-        floorspace:2000,
-        extras: [
-            'elevator',
-            'gym'
-        ],
-        homeType: 'Apartment',
-        image:'https://www.coldwellbanker.com/images_brand/CB/72508062.jpg',
-    },
-    {
-        address: '2236 wishmount rd',
-        city: 'Queens',
-        state: 'NY',
-        rooms: 5,
-        price: 200000,
-        floorspace:2000,
-        extras: [
-            'elevator',
-            'gym'
-        ],
-        homeType: 'Ranch',
-        image:'https://www.coldwellbanker.com/images_brand/CB/72508062.jpg',
-    },
-]
+  {
+    address: "2236 wishmount rd",
+    city: "NEW YORK",
+    state: "NY",
+    rooms: 2,
+    price: 150000,
+    floorspace: 2000,
+    extras: ["elevator", "gym"],
+    homeType: "Studio",
+    image: "https://photos.zillowstatic.com/p_e/ISjvjrkv7cd20p0000000000.jpg",
+  },
+  {
+    address: "236 Mountrock rd",
+    city: "Queens",
+    state: "NY",
+    rooms: 3,
+    price: 250000,
+    floorspace: 2000,
+    extras: ["elevator", "gym"],
+    homeType: "Studio",
+    image:
+      "https://pls-photos-dev.s3-us-west-2.amazonaws.com/staging/markets/market-atlanta-thumb.jpg",
+  },
+  {
+    address: "2236 wishmount rd",
+    city: "Glen Cove",
+    state: "NY",
+    rooms: 4,
+    price: 350000,
+    floorspace: 2000,
+    extras: ["elevator", "gym"],
+    homeType: "Room",
+    image:
+      "https://ar.rdcpix.com/1353622449/dc8f7bc612345f6df56341e1c05c7b29c-f0od-w480_h480_q80.jpg",
+  },
+  {
+    address: "2236 wishmount rd",
+    city: "Ridgewood",
+    state: "NY",
+    rooms: 5,
+    price: 250000,
+    floorspace: 2000,
+    extras: ["elevator", "gym"],
+    homeType: "Condo",
+    image:
+      "https://odis.homeaway.com/odis/listing/0924767e-09af-40c2-be99-774612951afd.c9.jpg",
+  },
+  {
+    address: "2236 wishmount rd",
+    city: "Queens",
+    state: "NY",
+    rooms: 6,
+    price: 150000,
+    floorspace: 2000,
+    extras: ["elevator", "gym"],
+    homeType: "Apartment",
+    image:
+      "https://www.kstrealty.com/wp-content/uploads/2014/03/5770-Garber-frontright2.jpg",
+  },
+  {
+    address: "2236 wishmount rd",
+    city: "Ridgewood",
+    state: "NY",
+    rooms: 1,
+    price: 150000,
+    floorspace: 2000,
+    extras: ["elevator", "gym"],
+    homeType: "Apartment",
+    image:
+      "https://d1a9exk0cwigjo.cloudfront.net/doorsteps-api-assets/v2/locales/miami-fl/collections/living-large-miami.jpg",
+  },
+  {
+    address: "2236 wishmount rd",
+    city: "Queens",
+    state: "NY",
+    rooms: 2,
+    price: 150000,
+    floorspace: 2000,
+    extras: ["elevator", "gym"],
+    homeType: "Apartment",
+    image:
+      "https://www.atlantaluxuryrentals.com/wp-content/uploads/2019/07/1-16-1.jpg",
+  },
+  {
+    address: "2236 wishmount rd",
+    city: "Queens",
+    state: "NY",
+    rooms: 5,
+    price: 200000,
+    floorspace: 2000,
+    extras: ["elevator", "gym"],
+    homeType: "Ranch",
+    image: "https://www.coldwellbanker.com/images_brand/CB/72508062.jpg",
+  },
+  {
+    address: "2236 wishmount rd",
+    city: "Queens",
+    state: "NY",
+    rooms: 2,
+    price: 150000,
+    floorspace: 2000,
+    extras: ["elevator", "gym"],
+    homeType: "Apartment",
+    image:
+      "https://cdn.homes.com/cgi-bin/readimage/8498428649/5901-peachtree-dunwoody-rd-atlanta-ga-30328-0.jpg?resize=1&width=700&height=440&aspect=1",
+  },
+  {
+    address: "2236 wishmount rd",
+    city: "Queens",
+    state: "NY",
+    rooms: 5,
+    price: 200000,
+    floorspace: 2000,
+    extras: ["elevator", "gym"],
+    homeType: "Ranch",
+    image:
+      "https://odis.homeaway.com/odis/listing/8466f3b1-c4dd-41e3-8938-c6e664778cd9.f6.jpg",
+  },
+  {
+    address: "2236 wishmount rd",
+    city: "Glen Cove",
+    state: "NY",
+    rooms: 4,
+    price: 50000,
+    floorspace: 3500,
+    extras: ["elevator", "gym"],
+    homeType: "Room",
+    image:
+      "https://media.architecturaldigest.com/photos/5818ed50b4bb49553cd14b7e/master/w_1600%2Cc_limit/tiny-house-vacation-01.jpg",
+  },
+  {
+    address: "2236 wishmount rd",
+    city: "NEW YORK",
+    state: "NY",
+    rooms: 4,
+    price: 50000,
+    floorspace: 1500,
+    extras: ["elevator", "gym"],
+    homeType: "Room",
+    image:
+      "https://odis.homeaway.com/odis/listing/d9fad17c-2cdd-4fd7-a45e-a316b8a92240.f6.jpg",
+  },
+  {
+    address: "2236 wishmount rd",
+    city: "Ridgewood",
+    state: "NY",
+    rooms: 5,
+    price: 250000,
+    floorspace: 2000,
+    extras: ["elevator", "gym"],
+    homeType: "Condo",
+    image:
+      "https://doorsteps-ar.rdcpix.com/1742055204/ba9e0107ce41e6611165b2ec770835fdc-f0x.jpg",
+  },
+  {
+    address: "2236 wishmount rd",
+    city: "Ridgewood",
+    state: "NY",
+    rooms: 5,
+    price: 250000,
+    floorspace: 2000,
+    extras: ["elevator", "gym"],
+    homeType: "Condo",
+    image:
+      "https://www.themostexpensivehomes.com/wp-content/uploads/2017/03/TOP-25-Most-Expensive-Airbnb-Houses-to-Rent-in-the-USA-15.jpg",
+  },
+];
 
 export default ListingsData;

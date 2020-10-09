@@ -1,338 +1,334 @@
-#content-area{
-    overflow: auto;
-    width: 100%;
-    background: white;
+#content-area {
+  overflow: auto;
+  width: 100%;
+  background: white;
 }
 
-#filter{
-    background: $grey;
-    width: 30%;
+#filter {
+  background: $grey;
+  width: 30%;
+  max-width: 300px;
+  float: left;
+  display: inline-block;
+
+  .inside {
+    padding: 20px;
     max-width: 300px;
-    float: left;
-    display: inline-block;
+  }
 
+  h4 {
+    font-size: 0.9rem;
+    margin-bottom: 25px;
+    font-weight: 600px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+  }
 
-    .inside {
-        padding: 20px;
-        max-width: 300px;
+  select {
+    background: transparent;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #1b1b1b;
+    display: block;
+    margin-bottom: 25px;
+    width: 100%;
+  }
+
+  .filters {
+    .title {
+      font-size: 0.9rem;
+      display: block;
+      margin-bottom: 1rem;
+      color: $darkGrey;
     }
 
-    h4{
-        font-size: 0.9rem;
-        margin-bottom: 25px;
-        font-weight: 600px;
-        margin-bottom: 25px;
-        text-transform: uppercase;
+    input[type="text"] {
+      border-radius: 5px;
+      font-size: 1rem;
+      padding: 0.4rem;
+      width: 45%;
+      display: inline-block;
+      margin-right: 2.5%;
+      margin-bottom: 1rem;
     }
-
-
-
-    select {
-        background: transparent;
-        padding: 10px;
-        font-size: 14px;
-        font-weight: 500;
-        color: #1b1b1b;
+    &.extras {
+      label {
         display: block;
-        margin-bottom: 25px;
         width: 100%;
-        
+        padding: 10px 0;
+
+        input[type="checkbox"] {
+          float: right;
+        }
+      }
     }
-
-    .filters{
-        .title{
-            font-size: .9rem;
-            display: block;
-            margin-bottom: 1rem;
-            color: $darkGrey;
-        }
-
-        input[type="text"] {
-            border-radius: 5px;
-            font-size: 1rem;
-            padding: 0.4rem;
-            width: 45%;
-            display: inline-block;
-            margin-right: 2.5%;
-            margin-bottom: 1rem;
-
-        }
-        &.extras{
-            label {
-                display: block;
-                width: 100%;
-                padding: 10px 0;
-
-                input[type="checkbox"]{
-                    float: right;
-                }
-            }
-        }
-    }
+  }
 }
 
+#listings {
+  width: 62%;
+  float: left;
+  display: inline-block;
+  padding: 15px;
+  background: $offWhite;
 
+  .search-area {
+    input[type="text"] {
+      width: 70%;
+      background: transparent;
+      font-size: 2rem;
+      border: none;
+      border-bottom: 2px solid $darkGrey;
+      margin-bottom: 20px;
+      font-weight: 100;
+      color: $lightGrey;
+    }
+  }
 
+  .sortby-area {
+    margin-bottom: 20px;
 
-
-#listings{
-    width: 74%;
-    float: left;
-    display: inline-block;
-    padding: 15px;
-    background:$offWhite;
-    
-    
-    .search-area{
-        input[type="text"] {
-            width: 70%;
-            background:transparent;
-            font-size: 2rem;
-            border: none;
-            border-bottom: 2px solid $darkGrey;
-            margin-bottom: 20px;
-            font-weight: 100;
-            color: $lightGrey;
-        }
+    .results {
+      font-size: 0.8rem;
+      color: $darkGrey;
+      display: inline-block;
     }
 
-    .sortby-area{
-        margin-bottom: 20px;
+    .sort-options {
+      float: right;
 
-        .results{
-            font-size: 0.8rem;
-            color: $darkGrey;
-            display: inline-block;
-            
-
-        }
-
-        .sort-options {
-            float: right;
-
-            select {
-                font-size: 0.9rem;
-                font-weight: 300;
-                border: 1px solid $lightGrey;
-                background: transparent;
-                padding: 3px;
-                display: inline-block;
-                margin-right: 15px;
-                vertical-align: top;
-            }
-
-            .view{
-                display: inline-block;
-
-                .fa{
-                    margin-right: 15px;
-                    font-size: 1.5rem;
-                }
-            }
-
-
-        }
-    }
-
-    .listings-results{
-        margin-bottom: 80px;
-        .listing{
-            background: #fff;
-            -webkit-box-shadow: 0px 9px 54px -5px rgba(222,222,222,1);
-            -moz-box-shadow: 0px 9px 54px -5px rgba(222,222,222,1);
-            box-shadow: 0px 9px 54px -5px rgba(222,222,222,1);
-
-        }
-
-        .listing-img{
-            color: white;
-            padding: 15px;
-            position: relative;
-            background: url(https://cdnimages.familyhomeplans.com/plans/81902/81902-b600.jpg) no-repeat center center ; 
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-            min-height: 200px;
-            -webkit-border-top-left-radius: 5px;
-            -webkit-border-top-right-radius: 5px;
-            -moz-border-radius-topleft: 5px;
-            -moz-border-radius-topright: 5px;
-            border-top-left-radius: 5px;
-            border-top-right-radius: 5px;
-            
-
-
-            &:hover{
-                .details{
-                    opacity: 1;
-                }
-                .address{
-                    opacity: 0;
-                }
-            }
-
-            .address {
-                position: absolute;
-                bottom: 20px;
-                opacity: 1;
-                transition: all .4s ease-in-out;
-                text-shadow: 0px 1px 9px rgba(91, 91, 91, 1);
-                font-size: 1.2rem;
-            }
-
-
-            .details{
-                transition: all .4s ease-in-out;
-                opacity: 0;
-                padding: 30px;
-                position: absolute;
-                top: 0;
-                left: 0;
-                bottom: 0;
-                right: 0;
-                -webkit-border-top-left-radius: 5px;
-                -webkit-border-top-right-radius: 5px;
-                -moz-border-radius-topleft: 5px;
-                -moz-border-radius-topright: 5px;
-                border-top-left-radius: 5px;
-                border-top-right-radius: 5px;
-                /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#d637d3+5,db31f9+33,ef70eb+54,ef70eb+54,ef70eb+61,ef70eb+73,ef70eb+83,ef70eb+91 */
-                background: rgb(214,55,211); /* Old browsers */
-                background: -moz-linear-gradient(-45deg, rgba(214,55,211,.8) 5%, rgba(219,49,249,.8) 33%, rgba(239,112,235,.8) 54%, rgba(239,112,235,.8) 54%, rgba(239,112,235,.8) 61%, rgba(239,112,235,.8) 73%, rgba(239,112,235,.8) 83%, rgba(239,112,235,.8) 91%); /* FF3.6-15 */
-                background: -webkit-linear-gradient(-45deg, rgba(214,55,211,.8) 5%,rgba(219,49,249,.8) 33%,rgba(239,112,235,.8) 54%,rgba(239,112,235,.8) 54%,rgba(239,112,235,.8) 61%,rgba(239,112,235,.8) 73%,rgba(239,112,235,.8) 83%,rgba(239,112,235,.8) 91%); /* Chrome10-25,Safari5.1-6 */
-                background: linear-gradient(135deg, rgba(214,55,211,.8) 5%,rgba(219,49,249,.8) 33%,rgba(239,112,235,.8) 54%,rgba(239,112,235,.8) 54%,rgba(239,112,235,.8) 61%,rgba(239,112,235,.8) 73%,rgba(239,112,235,.8) 83%,rgba(239,112,235,.8) 91%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-
-
-                .user-img{
-                    width: 35px;
-                    height: 35px;
-                    border-radius: 50%;
-                    border: 2px solid white;
-                    display: inline-block;
-                    background: url(https://cdnimages.familyhomeplans.com/plans/81902/81902-b600.jpg) no-repeat center center ; 
-                    -webkit-background-size: cover;
-                    -moz-background-size: cover;
-                    -o-background-size: cover;
-                    background-size: cover;
-                }
-
-                .user-details{
-                    vertical-align: top;
-                    display: inline-block;
-                    
-
-                    .user-name{
-                        font-weight: 300;
-                        font-size: 0.9rem;
-                        display: block;
-                        color: rgba(222,222,222,1);
-                        margin-top: 3px;
-                        margin-bottom: 5px;
-
-                    }
-
-                    .post-date{
-                        display: block;
-                        color: rgba(222,222,222,.6);
-
-                    }
-                }
-
-                .listing-details{
-                    margin-top: 20px;
-
-                    .fa{
-                        display: inline-block;
-                        font-size: 20px;
-                        margin-right: 15px;
-
-                    }
-
-                    span{
-                        font-weight: 300;
-                        font-size: .8rem;
-                        display: inline-block;
-                        vertical-align: top;
-                        position: relative;
-                        top: 3px;
-                    }
-
-
-                    .floor-space{
-                        margin-bottom: 10px;
-                    }
-
-                    
-
-
-
-                }
-
-                
-            
-            }
-        
-        }
-        .bottom-info{
-            padding: 20px 15px;
-            .price{
-                font-size: 1rem;
-                display: block;
-                margin-bottom: 10px;
-                color: $darkGrey;
-            }
-            .location{
-                font-size: 1.2rem;
-                display: block;
-                color: $lightGrey;
-            }
-        }
-    }
-}
-
-.view-btn{
-    background: $darkGrey;
-    padding: 8px;
-    font-size: .9rem;
-    border-radius: 5px;
-    text-align: center;
-    max-width: 150px;
-    transition: background 0.3s ease-in-out;
-    
-
-    &:hover{
-        background: black;
-        cursor: pointer;
-    }
-}
-
-#pagination{
-    text-align: center;
-    .pages{
-        margin: 0 auto;
-        padding: 0px;
+      select {
+        font-size: 0.9rem;
+        font-weight: 300;
+        border: 1px solid $lightGrey;
+        background: transparent;
+        padding: 3px;
         display: inline-block;
-        background: white;
-        -webkit-box-shadow: 0px 9px 54px -5px rgba(222,222,222,1);
-    -moz-box-shadow: 0px 9px 54px -5px rgba(222,222,222,1);
-     box-shadow: 0px 9px 54px -5px rgba(222,222,222,1);
+        margin-right: 15px;
+        vertical-align: top;
+      }
 
-     li{
-         display: inline-block;
-        padding: 20px;
+      .view {
+        display: inline-block;
 
-        &.active,
-        &:hover{
-            color: white;
-            background: $pink;
-            font-weight: 700;
+        .fa {
+          margin-right: 15px;
+          font-size: 1.5rem;
         }
-     }
+      }
     }
+  }
+
+  .listings-results {
+    margin-bottom: 80px;
+    .listing {
+      background: #fff;
+      -webkit-box-shadow: 0px 9px 54px -5px rgba(222, 222, 222, 1);
+      -moz-box-shadow: 0px 9px 54px -5px rgba(222, 222, 222, 1);
+      box-shadow: 0px 9px 54px -5px rgba(222, 222, 222, 1);
+    }
+
+    .listing-img {
+      color: white;
+      padding: 15px;
+      position: relative;
+      background: url(https://cdnimages.familyhomeplans.com/plans/81902/81902-b600.jpg)
+        no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      min-height: 200px;
+      -webkit-border-top-left-radius: 5px;
+      -webkit-border-top-right-radius: 5px;
+      -moz-border-radius-topleft: 5px;
+      -moz-border-radius-topright: 5px;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+
+      &:hover {
+        .details {
+          opacity: 1;
+        }
+        .address {
+          opacity: 0;
+        }
+      }
+
+      .address {
+        position: absolute;
+        bottom: 20px;
+        opacity: 1;
+        transition: all 0.4s ease-in-out;
+        text-shadow: 0px 1px 9px rgba(91, 91, 91, 1);
+        font-size: 1.2rem;
+      }
+
+      .details {
+        transition: all 0.4s ease-in-out;
+        opacity: 0;
+        padding: 30px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        -webkit-border-top-left-radius: 5px;
+        -webkit-border-top-right-radius: 5px;
+        -moz-border-radius-topleft: 5px;
+        -moz-border-radius-topright: 5px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#d637d3+5,db31f9+33,ef70eb+54,ef70eb+54,ef70eb+61,ef70eb+73,ef70eb+83,ef70eb+91 */
+        background: rgb(214, 55, 211); /* Old browsers */
+        background: -moz-linear-gradient(
+          -45deg,
+          rgba(214, 55, 211, 0.8) 5%,
+          rgba(219, 49, 249, 0.8) 33%,
+          rgba(239, 112, 235, 0.8) 54%,
+          rgba(239, 112, 235, 0.8) 54%,
+          rgba(239, 112, 235, 0.8) 61%,
+          rgba(239, 112, 235, 0.8) 73%,
+          rgba(239, 112, 235, 0.8) 83%,
+          rgba(239, 112, 235, 0.8) 91%
+        ); /* FF3.6-15 */
+        background: -webkit-linear-gradient(
+          -45deg,
+          rgba(214, 55, 211, 0.8) 5%,
+          rgba(219, 49, 249, 0.8) 33%,
+          rgba(239, 112, 235, 0.8) 54%,
+          rgba(239, 112, 235, 0.8) 54%,
+          rgba(239, 112, 235, 0.8) 61%,
+          rgba(239, 112, 235, 0.8) 73%,
+          rgba(239, 112, 235, 0.8) 83%,
+          rgba(239, 112, 235, 0.8) 91%
+        ); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(
+          135deg,
+          rgba(214, 55, 211, 0.8) 5%,
+          rgba(219, 49, 249, 0.8) 33%,
+          rgba(239, 112, 235, 0.8) 54%,
+          rgba(239, 112, 235, 0.8) 54%,
+          rgba(239, 112, 235, 0.8) 61%,
+          rgba(239, 112, 235, 0.8) 73%,
+          rgba(239, 112, 235, 0.8) 83%,
+          rgba(239, 112, 235, 0.8) 91%
+        ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+        .user-img {
+          width: 35px;
+          height: 35px;
+          border-radius: 50%;
+          border: 2px solid white;
+          display: inline-block;
+          background: url(https://cdnimages.familyhomeplans.com/plans/81902/81902-b600.jpg)
+            no-repeat center center;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+        }
+
+        .user-details {
+          vertical-align: top;
+          display: inline-block;
+
+          .user-name {
+            font-weight: 300;
+            font-size: 0.9rem;
+            display: block;
+            color: rgba(222, 222, 222, 1);
+            margin-top: 3px;
+            margin-bottom: 5px;
+          }
+
+          .post-date {
+            display: block;
+            color: rgba(222, 222, 222, 0.6);
+          }
+        }
+
+        .listing-details {
+          margin-top: 20px;
+
+          .fa {
+            display: inline-block;
+            font-size: 20px;
+            margin-right: 15px;
+          }
+
+          span {
+            font-weight: 300;
+            font-size: 0.8rem;
+            display: inline-block;
+            vertical-align: top;
+            position: relative;
+            top: 3px;
+          }
+
+          .floor-space {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+    .bottom-info {
+      padding: 20px 15px;
+      .price {
+        font-size: 1rem;
+        display: block;
+        margin-bottom: 10px;
+        color: $darkGrey;
+      }
+      .location {
+        font-size: 1.2rem;
+        display: block;
+        color: $lightGrey;
+      }
+    }
+  }
 }
 
+.view-btn {
+  background: $darkGrey;
+  padding: 8px;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  text-align: center;
+  max-width: 150px;
+  transition: background 0.3s ease-in-out;
 
+  &:hover {
+    background: black;
+    cursor: pointer;
+  }
+}
+
+#pagination {
+  text-align: center;
+  .pages {
+    margin: 0 auto;
+    padding: 0px;
+    display: inline-block;
+    background: white;
+    -webkit-box-shadow: 0px 9px 54px -5px rgba(222, 222, 222, 1);
+    -moz-box-shadow: 0px 9px 54px -5px rgba(222, 222, 222, 1);
+    box-shadow: 0px 9px 54px -5px rgba(222, 222, 222, 1);
+
+    li {
+      display: inline-block;
+      padding: 20px;
+
+      &.active,
+      &:hover {
+        color: white;
+        background: $pink;
+        font-weight: 700;
+      }
+    }
+  }
+}
 
 // .col-md-3{
 //     width: 29%;
@@ -346,11 +342,9 @@
 //     display: inline-block;
 // }
 
-// .col-lg-6{
-//     width: 47%;
-//     display: inline-block;
-//     vertical-align: top;
-//     padding: 20px 15px ;
+// .col-lg-6 {
+//   width: 44%;
+//   display: inline-block;
+//   vertical-align: top;
+//   padding: 20px 15px;
 // }
-
-

@@ -1,37 +1,35 @@
-header{
-    background: $darkPurple;
-    color: white;
-    padding: 20px 15px;
-    overflow: auto;
-    margin: 0px;
-    
+header {
+  background: $darkPurple;
+  color: white;
+  padding: 20px 15px;
+  overflow: auto;
+  margin: 0px;
 
-    .logo{
-        float: left;
+  .logo {
+    float: left;
+    color: $favColor;
+    font-weight: 700;
+  }
+  nav {
+    float: right;
+
+    a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      text-transform: capitalize;
+
+      &:hover {
+        color: $favColor;
+      }
+
+      &.register-btn {
+        background: $favColor;
+        padding: 7px 25px;
+        text-align: center;
+        color: white;
+        border-radius: 5px;
+      }
     }
-    nav{
-        float: right;
-
-        a{
-            color: white;
-            text-decoration: none;
-            padding: 10px 20px;
-            text-transform: capitalize;
-
-
-            &:hover{
-                color: $favColor;
-
-            }
-
-            &.register-btn{
-                background: $favColor;
-                padding: 7px 25px;
-                text-align: center;
-                color: white;
-                border-radius: 5px;
-
-            }
-        }
-    }
+  }
 }
